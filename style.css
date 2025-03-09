@@ -26,20 +26,21 @@ body {
     right: 0;
     background-color:black;
     overflow: auto;
-    transition: 2s;
+    transition: 1s;
 }
 .nav-list{
     top:10px;
-    padding: 10px;
+    padding: 20px;
     font-size: 30px;
     text-decoration: solid;
     color: rgb(232, 239, 239);
     display:block;
-    transition: 1s;
-    border-top: 1px solid;
+    border-bottom: 0.1px solid;
     border-color: rgb(255, 255, 255);
 }
-
+.nav-list.show {
+    opacity: 10;
+}
 
 a {
     text-decoration: none;
@@ -54,10 +55,9 @@ a:hover{
   
 .nav .closebtn {
     position: absolute;
-    top: px;
-    left: 10px;
+    top: 20px;
+    left: 20px;
     font-size: 30px;
-    margin-right: 40px;
   }
 .nav .closebtn:hover{
     color: rgb(183, 188, 193);
@@ -70,7 +70,7 @@ a:hover{
 .name{
     color: rgb(255, 255, 255);
     font-size: 50px;
-    font-family:sans-serif;
-    align-content: center;
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
     left: 30px;
 }
