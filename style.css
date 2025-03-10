@@ -6,14 +6,14 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    overflow: hidden;
+    overflow: auto;
 }
 .nav-button{
-    font-size: 30px;
+    font-size: 40px;
     cursor: pointer;
     padding: 10px;
     position: absolute;
-    top: 10px;
+    top: 35px;
     right:10px;  
     color: rgb(255, 255, 255);
 }
@@ -42,7 +42,14 @@ body {
     opacity: 10;
 }
 
-a {
+.nav-item {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family:'Times New Roman', Times, serif;
+    border-top: gray;
+    border: 10px;
+}
+.closebtn{
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-family:'Times New Roman', Times, serif;
@@ -68,9 +75,35 @@ a:hover{
 }
 
 .name{
-    color: rgb(255, 255, 255);
-    font-size: 50px;
-    font-family:'Times New Roman', Times, serif;
+    font-size: 75px;
+    font-family: "Almendra",sans-serif;
     text-align: center;
-    left: 30px;
+    user-select: none;
+    transition: top 0.3s;
+    background: linear-gradient(to right, white,rgb(190, 190, 190),rgb(126, 126, 126), rgb(99, 99, 99),rgb(169, 169, 169),rgb(205, 205, 205),rgb(253, 253, 253));
+    background-size: 300%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animate-gradient 5.5s linear infinite;
+}
+@keyframes animate-gradient{
+    to {
+        background-position: 300%;
+    }
+}
+.intro{
+    display: flex;
+}
+.intro img{
+    height: 300px;
+    margin-right: 20px;
+    border: solid 5px;
+    border-top-left-radius: 50%;
+}
+.intro p{
+    color: aliceblue;
+    font-size: 20px;
+    margin-left: 30px;
+    background: linear-gradient(white,rgb(198, 197, 197),rgb(152, 152, 152), rgb(99, 99, 99));
 }
