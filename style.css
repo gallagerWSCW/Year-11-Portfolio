@@ -1,12 +1,13 @@
 body {
     margin: o;
     font-family: 'Times New Roman', Times, serif;
-    background: linear-gradient(to bottom , black,rgb(0, 0, 39),rgb(1, 1, 128),rgb(1, 1, 228));
+    background: linear-gradient(to bottom , rgb(0, 0, 0),rgb(0, 0, 39),rgb(1, 1, 128),rgb(1, 1, 228));
     height:100%;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: auto;
+    user-select: none;    
 }
 .nav-button{
     font-size: 40px;
@@ -16,6 +17,7 @@ body {
     top: 35px;
     right:10px;  
     color: rgb(255, 255, 255);
+    user-select: none;
 }
 .nav{
     height: 100%;
@@ -37,9 +39,33 @@ body {
     display:block;
     border-bottom: 0.1px solid;
     border-color: rgb(255, 255, 255);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-100px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
 }
 .nav-list.show {
-    opacity: 10;
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0);
+}
+.nav-list:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.nav-list:nth-child(2) {
+    transition-delay: 0.4s;
+}
+.nav-list:nth-child(3) {
+    transition-delay: 0.6s;
+}
+.nav-list:nth-child(4) {
+    transition-delay: 0.8s;
+}
+.nav-list:nth-child(5) {
+    transition-delay: 1s;
+}
+.nav-list:nth-child(6) {
+    transition-delay: 1.2s;
 }
 
 .nav-item {
@@ -74,8 +100,8 @@ a:hover{
 .nav a {font-size: 18px;}
 }
 
-.name{
-    font-size: 75px;
+.title-name{
+    font-size: 50px;
     font-family: "Almendra",sans-serif;
     text-align: center;
     user-select: none;
@@ -86,14 +112,25 @@ a:hover{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: animate-gradient 5.5s linear infinite;
+    margin-top: -50px;
+}
+.title-name h3{
+    text-align: left;
+    margin-left:100px ;
+    margin-top: -75px;
+    font-weight: 700;
 }
 @keyframes animate-gradient{
     to {
         background-position: 300%;
     }
 }
+
 .intro{
     display: flex;
+    background: scroll;
+    background-position-y: top 100px;
+    background-color: rgb(16, 15, 14);
 }
 .intro img{
     height: 300px;
@@ -101,9 +138,19 @@ a:hover{
     border: solid 5px;
     border-top-left-radius: 50%;
 }
+.intro img:hover{
+    transform: scale(1.1);
+    border: 0px;
+}
 .intro p{
-    color: aliceblue;
-    font-size: 20px;
-    margin-left: 30px;
-    background: linear-gradient(white,rgb(198, 197, 197),rgb(152, 152, 152), rgb(99, 99, 99));
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    margin-left: 40px;
+    font-family: "merriweather",Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.skills{
+    display: flex;
+    background: scroll;
 }
