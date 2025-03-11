@@ -41,8 +41,8 @@ body {
     border-color: rgb(255, 255, 255);
     opacity: 0;
     visibility: hidden;
-    transform: translateX(-100px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: rotate(20deg);
+    transition: opacity 0.4s ease, transform 0.4s ease;
 }
 .nav-list.show {
     opacity: 1;
@@ -106,7 +106,7 @@ a:hover{
     text-align: center;
     user-select: none;
     transition: top 0.3s;
-    background: linear-gradient(to right, white,rgb(190, 190, 190),rgb(126, 126, 126), rgb(99, 99, 99),rgb(169, 169, 169),rgb(205, 205, 205),rgb(253, 253, 253));
+    background: linear-gradient(to right, white,rgb(243, 217, 217),rgba(190, 190, 190, 190), rgb(249, 174, 174),rgb(244, 112, 112),rgb(244, 49, 49),rgb(100, 0, 0),rgb(244, 49, 49),rgb(244, 112, 112), rgb(249, 174, 174),rgb(243, 217, 217),rgba(190, 190, 190, 190),white);
     background-size: 300%;
     background-clip: text;
     -webkit-background-clip: text;
@@ -129,8 +129,9 @@ a:hover{
 .intro{
     display: flex;
     background: scroll;
-    background-position-y: top 100px;
+    background-position-y: bottom 100px;
     background-color: rgb(16, 15, 14);
+    padding:0;
 }
 .intro img{
     height: 300px;
@@ -151,6 +152,46 @@ a:hover{
     margin-top: 20px;
 }
 .skills{
+    color: aliceblue;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     background: scroll;
+}
+.skill-t{
+    color: rgb(247, 247, 255);
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border-bottom: solid 5px rgb(255, 255, 255);
+    padding-bottom: 8px;
+    display: inline-block;
+    margin-left: 700px;
+    width: auto;
+    margin-bottom: -10px;
+}
+.Programming, .cad{
+    width:50%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.Programming li, .cad li, .Programming h4, .cad h4{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+.Programming li, .cad li{
+    font-size: 20px;
+    font-weight: 600;
+}
+.skills img{
+    height:50px;
+    width: auto;
+}
+.skills li{
+    background-color: rgb(46, 44, 44);
+    border-radius: 50px;
+    border: solid, 1px;
 }
