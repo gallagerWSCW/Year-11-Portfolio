@@ -162,16 +162,16 @@ a:hover{
 }
 .skills{
     color: aliceblue;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    font-family: "Londrina Shadow";
     display: flex;
     background: scroll;
 }
 .skill-t{
     color: rgb(247, 247, 255);
-    font-size: 40px;
-    font-family: 'Times New Roman', Times, serif;
+    font-size: 50px;
     text-align: center;
+    font-family: "Londrina Shadow";
     border-bottom: solid 5px rgb(255, 255, 255);
     padding-bottom: 8px;
     display: inline-block;
@@ -210,4 +210,20 @@ a:hover{
 .cont{
     background: fixed;
     background-color: aliceblue;
+    text-align: center;
+    font-size: 20px;
+    font-family: "Rationale", sans-serif;
+
 }
+.cont h1{
+    padding-top: 20px;
+    font-size: 45px;
+}
+.cont p{
+    text-align: left;
+    margin-left: 30px;
+    margin-top: -10px;
+    font-size: 30px;
+    font-weight: 550;
+}
+
