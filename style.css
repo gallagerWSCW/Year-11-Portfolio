@@ -1,9 +1,6 @@
-body{
-    margin:0;
-    padding: 0;
-}
 body {
-    margin: o;
+    margin: 0;
+    padding: 0;
     font-family: 'Times New Roman', Times, serif;
     background: linear-gradient(to bottom , rgb(0, 0, 0),rgb(0, 0, 39),rgb(1, 1, 128),rgb(1, 1, 228));
     height:100%;
@@ -133,7 +130,6 @@ a:hover{
 .intro{
     display: flex;
     background: scroll;
-    background-position-y: bottom 100px;
     background-color: rgb(16, 15, 14);
     padding:0;
 }
@@ -154,9 +150,9 @@ a:hover{
 }
 .intro p{
     color: rgb(255, 255, 255);
-    font-size: 25px;
+    font-size: 35px;
     margin-left: 40px;
-    font-family: "merriweather",Arial, Helvetica, sans-serif;
+    font-family: "Shadows Into Light";
     font-weight: 700;
     margin-top: 20px;
 }
@@ -213,17 +209,114 @@ a:hover{
     text-align: center;
     font-size: 20px;
     font-family: "Rationale", sans-serif;
-
+    overflow: hidden;
+    user-select: all;
 }
 .cont h1{
-    padding-top: 20px;
     font-size: 45px;
 }
 .cont p{
     text-align: left;
-    margin-left: 30px;
+    margin-left: 100px;
     margin-top: -10px;
+    padding: 0;
     font-size: 30px;
     font-weight: 550;
 }
+.project1{
+    width: 100%;
+    height: 500px;
+    background-image: url("images/project.png");
+    background-size: cover;
+}
+.textp1{
+    padding-top: 250px;
+    margin-left: 100px;
+}
+.project1 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+}
+.project1 a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border: solid 5px;
+    border-color: black;
+    padding: 17px 50px;
+    text-decoration: none;
+}
+.project1 a:hover{
+    background-color: black;
+    border-color: black;
+    color: rgb(255, 255, 255);
+}
+.project2{
+    width: 100%;
+    height: 500px;
+    background-image: url("images/project.png");
+    background-size: cover;
+}
+.textp2{
+    padding-top: 250px;
+    margin-left: 100px;
+}
+.project2 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+}
+.project2 a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border: solid 5px;
+    border-color: black;
+    padding: 17px 50px;
+    text-decoration: none;
+}
+.project2 a:hover{
+    background-color: black;
+    border-color: black;
+    color: rgb(255, 255, 255);
+}
 
+.project3{
+    width: 100%;
+    height: 500px;
+    background-image: url("images/project.png");
+    background-size: cover;
+}
+.textp3{
+    padding-top: 250px;
+    margin-left: 100px;
+}
+.project3 h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 600;
+}
+.project3 a{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -20px;
+    font-size: 20px;
+    color: black;
+    font-weight: 600;
+    border: solid 5px;
+    border-color: black;
+    padding: 17px 50px;
+    text-decoration: none;
+}
+.project3 a:hover{
+    background-color: black;
+    border-color: black;
+    color: rgb(255, 255, 255);
+}

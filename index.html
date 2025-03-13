@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wdth,wght@0,18..144,103.6,300..900;1,18..144,103.6,300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather:ital,opsz,wdth,wght@0,18..144,103.6,300..900;1,18..144,103.6,300..900&family=Rationale&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=call" />    <title>Rasandu Gallage</title>
     <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Londrina+Shadow&family=Merriweather:ital,opsz,wdth,wght@0,18..144,103.6,300..900;1,18..144,103.6,300..900&family=Rationale&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Almendra+SC&family=Almendra:ital,wght@0,400;0,700;1,400;1,700&family=Londrina+Shadow&family=Merriweather:ital,opsz,wdth,wght@0,18..144,103.6,300..900;1,18..144,103.6,300..900&family=Rationale&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>Rasandu Gallage</title>
 </head>
     <body>
         <div id="page">
@@ -17,17 +19,17 @@
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                 <ul>
                     <li class="nav-list"><a class="nav-item" href="index.html">Home</a></li>
-                    <li class="nav-list"><a class="nav-item" href="">About</a></li>
-                    <li class="nav-list"><a class="nav-item" href="">Project 1</a></li>
-                    <li class="nav-list"><a class="nav-item" href="">Project 2</a></li>
-                    <li class="nav-list"><a class="nav-item" href="">Project 3</a></li>
-                    <li class="nav-list"><a class="nav-item" href="">Contact</a></li>
+                    <li class="nav-list"><a class="nav-item" href="#introduction">About</a></li>
+                    <li class="nav-list"><a class="nav-item" href="project1.html">Project 1</a></li>
+                    <li class="nav-list"><a class="nav-item" href="project2.html">Project 2</a></li>
+                    <li class="nav-list"><a class="nav-item" href="project3.html">Project 3</a></li>
+                    <li class="nav-list"><a class="nav-item" href="#contact">Contact</a></li>
                 </ul>
             </div>
             <span class="nav-button" onclick="openNav()">&#9776;</span>
             <div id="title-name" class="title-name"><h1 class="name">Rasandu Gallage</h1>
             <h3>Year 11 portfolio</h3></div>
-            <div class="intro">
+            <div class="intro" id="introduction">
                 <p class="intr-p">I'm Rasandu. I'm a year 11 student who is studying at Western Springs College. For this year, I am studying 6 subjects (Science, Mathematics, English, Digital Technology, Design & Visual Communication and Bussiness Studies). Digital Technology is one of my favourite subjects. This website is a place where I share my skills and work that I have done in my Digitel Technology class.</p>
                 <img src="ras.png" class="imgme" draggable="false">
             </div>
@@ -43,7 +45,27 @@
                         <li>TinkerCAD<img src="images/tinkercadpng.png"></li></div>
                 </div>
             </div>
-            <div class="cont">
+            <div class="projects">
+                <div class="project1" id="project1">
+                    <div class="textp1">
+                        <h1>Project 1</h1>
+                        <a href="project1.html">WATCH</a>
+                    </div>
+                </div>
+                <div class="project2" id="project2">
+                    <div class="textp2">
+                        <h1>Project 2</h1>
+                        <a href="project2.html">WATCH</a>
+                    </div>
+                </div>
+                <div class="project3" id="project3">
+                    <div class="textp3">
+                        <h1>Project 3</h1>
+                        <a href="project3.html">WATCH</a>
+                    </div>
+                </div>
+            </div>
+            <div class="cont" id="contact">
                 <h1>Contact</h1>
                 <p><i class="fa fa-fw fa-envelope"></i>Email: gallager@wsc.school.nz</p>
                 <p><span class="material-symbols-outlined" style="font-size: 38px;">call</span>Phone:+64228533366</p>
